@@ -1,3 +1,8 @@
 from django.contrib import admin
+from .models import Mensagem
 
 # Register your models here.
+@admin.register(Mensagem)
+class MensagemAdmin(admin.modelAdmin):
+    list_display = ("titulo", "criada_em")
+    search_fields = ("titulo", "conteudo")
