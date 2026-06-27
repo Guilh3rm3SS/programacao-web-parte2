@@ -15,3 +15,9 @@ up:
 
 down:
 	docker compose down
+
+create_user:
+	docker compose exec web python manage.py createsuperuser
+
+db_migrate:
+	docker compose run --rm web python manage.py migrate
