@@ -13,7 +13,7 @@ A interface exibe as mensagens do banco de dados de forma responsiva, com efeito
 
 ![Landing Page](./images/Captura_de_tela_20260627_210325.png)
 
-### Página Sobre / Painel Admin
+### Página Sobre 
 Outra visualização do projeto demonstrando a estrutura de navegação e estilização:
 
 
