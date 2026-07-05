@@ -11,13 +11,19 @@ Aqui estão algumas capturas de tela do projeto em funcionamento:
 ### Página Inicial
 A interface exibe as mensagens do banco de dados de forma responsiva, com efeitos interativos como zoom ao passar o mouse (`hover:scale-105`) e animações.
 
-![Landing Page](./images/Captura_de_tela_20260627_210325.png)
+![Landing Page](./images/image.png)
 
 ### Página Sobre 
 Outra visualização do projeto demonstrando a estrutura de navegação e estilização:
 
 
 ![Página Sobre](./images/Captura_de_tela_20260627_205352.png)
+
+### Página Admin 
+Modelos Categoria e Mensagem criados:
+
+
+![Admin](./images/db.png)
 
 ---
 
