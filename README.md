@@ -9,7 +9,7 @@ Este é um projeto de demonstração desenvolvido para a aula de **Programação
 Aqui estão algumas capturas de tela do projeto em funcionamento:
 
 ### Página Inicial
-A interface exibe as mensagens do banco de dados de forma responsiva, com efeitos interativos como zoom ao passar o mouse (`hover:scale-105`) e animações.
+A interface exibe as mensagens do banco de dados de forma responsiva, com efeitos interativos como zoom ao passar o mouse (`hover:scale-105`) e animações, exibe também as tags e categorias das mensagens.
 
 ![Landing Page](./images/image.png)
 
@@ -20,7 +20,7 @@ Outra visualização do projeto demonstrando a estrutura de navegação e estili
 ![Página Sobre](./images/Captura_de_tela_20260627_205352.png)
 
 ### Página Admin 
-Modelos Categoria e Mensagem criados:
+Modelos Categoria, Tag e Mensagem criados:
 
 
 ![Admin](./images/db.png)
