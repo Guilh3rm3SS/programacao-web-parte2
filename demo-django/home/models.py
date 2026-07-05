@@ -1,10 +1,29 @@
+# pyrefly: ignore [missing-import]
 from django.db import models
+
+class Categoria(models.Model):
+    nome = models.CharField(max_length=80, unique=True)
+
+
+    class Meta:
+        ordering = ["nome"]
+
+    def __str__(self):
+        return self.nome
 
 # Create your models here.
 class Mensagem(models.Model):
     titulo = models.CharField(max_length=120)
     autor = models.CharField(max_length=80, default="Anônimo")
     conteudo = models.TextField()
+    categoria = models.ForeignKey(
+        Categoria,
+        on_delete=models.SET_NULL,
+        null=True,
+        blank=True,
+        related_name="Mensagens",
+
+    )
     criada_em = models.DateTimeField(auto_now_add=True)
 
     class Meta:
