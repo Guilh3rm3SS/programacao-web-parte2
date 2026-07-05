@@ -4,8 +4,8 @@ from .models import Mensagem, Categoria
 # Register your models here.
 @admin.register(Categoria)
 class CategoriaAdmin(admin.ModelAdmin):
-    list_display = ("nome")
-    search_fields = ("nome")
+    list_display = ("nome",)
+    search_fields = ("nome",)
 
 
 @admin.register(Mensagem)
