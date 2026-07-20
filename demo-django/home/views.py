@@ -2,6 +2,7 @@ from django.shortcuts import render, redirect
 from django.utils.text import slugify
 from .models import Tag, Mensagem
 from .forms import MensagemForm
+from django.contrib import messages
 # Create your views here.
 
 
@@ -16,7 +17,7 @@ def nova_mensagem(request):
     if request.method == "POST":
         form = MensagemForm(request.POST)
         if form.is_valid():
-            mensagem = form.save() #salva título, conteúdo, autor e categoria no banco.
+            mensagem = form.save()
 
             #transforma o texto em objetos tag 
             tags_texto = form.cleaned_data["tags"]
@@ -26,6 +27,7 @@ def nova_mensagem(request):
                     tag, _ = Tag.objects.get_or_create(nome=nome)
                     mensagem.tags.add(tag)
 
+            messages.success(request, "Mensagem publicada com sucesso!")
             return redirect("index")
     else:
         form = MensagemForm()
