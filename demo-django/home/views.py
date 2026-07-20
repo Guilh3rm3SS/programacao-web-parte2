@@ -1,8 +1,7 @@
-from models import Tag
 from django.shortcuts import render, redirect
 from django.utils.text import slugify
-from forms import MensagemForm
-from .models import Mensagem
+from .models import Tag, Mensagem
+from .forms import MensagemForm
 # Create your views here.
 
 
