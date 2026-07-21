@@ -9,17 +9,28 @@ Este é um projeto de demonstração desenvolvido para a aula de **Programação
 Aqui estão algumas capturas de tela do projeto em funcionamento:
 
 ### Página Inicial
-A interface exibe as mensagens do banco de dados de forma responsiva, com efeitos interativos como zoom ao passar o mouse (`hover:scale-105`) e animações, exibe também as tags e categorias das mensagens e botão que redireciona para a tela de criação de novas mensagens.
+A interface exibe as mensagens do banco de dados de forma responsiva, com efeitos interativos como zoom ao passar o mouse (`hover:scale-105`) e animações, exibe também as tags e categorias das mensagens e botão que redireciona para a tela de criação de novas mensagens, botão para excluir mensagens e um para editá-las.
 
-![Landing Page](./images/image.png)
+![Landing Page](./images/index.png)
 
-![Mensagens](./images/nova_mensagem.png)
 
 ### Página Publicar Mensagem 
 Permite ao usuário criar novas mensagens para serem exibidas na página inicial:
 
 
-![Página Sobre](./images/criar_mensagem.png)
+![Página criar](./images/criar_mensagem.png)
+
+### Página Editar Mensagem 
+Permite ao usuário editar mensagens existentes:
+
+
+![Página editar](./images/edição.png)
+
+### Página Deletar Mensagem 
+Confirmação ao deletar uma mensagem:
+
+
+![Página criar](./images/remoção.png)
 
 ### Página Sobre 
 Outra visualização do projeto demonstrando a estrutura de navegação e estilização:

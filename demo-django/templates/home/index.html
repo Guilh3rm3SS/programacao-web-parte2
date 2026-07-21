@@ -103,15 +103,20 @@
                     <div class="flex flex-wrap gap-1 mt-1">
                         {% for tag in m.tags.all %}
                         <span class="inline-block px-2 py-0.5 bg-emerald-500/15 text-emerald-300 text-xs rounded">
-                            {{tag.nome}}
+                            #{{ tag.nome }}
                         </span>
                         {% endfor %}
                     </div>
                     {% endif %}
+                    <span class="text-xs text-slate-400">por {{ m.autor }}</span>
+                    <span class="text-xs text-slate-500">{{ m.criada_em|date:"d/m/Y H:i" }}</span>
 
-                    <span class="text-sm text-slate-300">Por </span><span
-                        class="text-sm text-green-300">{{m.autor}}</span>
-                    <p class="text-xs text-slate-500">{{ m.criada_em|date:"d/m/Y H:i" }}</p>
+                    <div class="flex gap-3 mt-1"> {# ← novo #}
+                        <a href="{% url 'editar_mensagem' m.id %}"
+                            class="text-xs text-indigo-300 hover:text-indigo-200 underline">editar</a>
+                        <a href="{% url 'remover_mensagem' m.id %}"
+                            class="text-xs text-red-400 hover:text-red-300 underline">remover</a>
+                    </div>
                 </li>
                 {% endfor %}
             </ul>
