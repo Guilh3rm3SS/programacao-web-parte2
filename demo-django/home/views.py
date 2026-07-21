@@ -56,4 +56,14 @@ def editar_mensagem(request, id):
         form = MensagemForm(instance=mensagem, initial={"tags": tags_atuais})
 
     return render(request, "home/editar.html", {"form": form, "mensagem": mensagem})
+
+def remover_mensagem(request, id):
+    mensagem = get_object_or_404(Mensagem, id=id)
+
+    if request.method == "POST":
+        mensagem.delete()
+        messages.success(request, "Mensagem removida.")
+        return redirect("index")
+
+    return render(request, "home/remover.html", {"mensagem": mensagem})
     
